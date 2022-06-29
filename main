@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+import selenium
+import requests
+import tkinter as tk
+class iob:
+    def __init__(self, master):
+            frame = tk.Frame(master)
+            frame.pack()
+
+searchpage = requests.get('https://fighters.mixedmartialarts.com/')
+id_box = requests.find("col-sm-4 col-xs-10")
