@@ -1,4 +1,4 @@
-import selenium
+#import selenium
 import requests
 import tkinter as tk
 class iob:
@@ -22,6 +22,6 @@ def clear(self):
     self.mode.set(0)
     self.value.set(0)
 root = tk.Tk()
-root.wm_title('encode/decoder')
+root.wm_title('MMA Math')
 app = iob(root)
 root.mainloop()
