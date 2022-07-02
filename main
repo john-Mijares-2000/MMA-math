@@ -1,6 +1,13 @@
-#import selenium
+from selenium import webdriver
 import requests
 import tkinter as tk
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service as ChromeService
+
+# Using1 Chrome to access web
+driver = webdriver.Chrome(executable_path = r'C:\Users\John\.spyder-py3\chromedriver')
+# Open the website
+driver.get('https://fighters.mixedmartialarts.com/')
 class iob:
     def __init__(self, master):
             frame = tk.Frame(master)
